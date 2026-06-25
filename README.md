@@ -1,15 +1,19 @@
 # Redrob Candidate Ranking System
 
-Production-grade ranking system for Senior AI Engineer role using multi-dimensional scoring.
+Production-grade ranking system for Senior AI Engineer role.
 
-## Quick Start
+## Setup & Run
 
 ```bash
-# 1. Install dependencies
+# 1. Create fresh virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 2. Install dependencies
 pip install -r requirements.txt
 
-# 2. Run ranking (generates team_pseudoclan.csv)
+# 3. Run ranking
 python rank.py --candidates candidates.jsonl --output team_pseudoclan.csv
 
-# 3. View results
+# 4. View results
 head -20 team_pseudoclan.csv
