@@ -1,0 +1,48 @@
+
+team_name: "Pseudoclan"
+team_id: "pseudoclan"
+
+primary_contact:
+  name: 
+  email: 
+  phone: 
+
+team_members:
+  - name: "Vinay Kushwaha"
+    email: "vinaymaurya51@gmail.com" 
+
+    Name: "Piyush Negi"
+    Email:""
+
+github_url: "https://github.com/Vinni986/redrob-hackathon"  
+
+
+compute_environment: "Linux/WSL, 16GB RAM, Python 3.12"
+
+methodology: |
+  Multi-dimensional ranking (7 signals, weighted):
+  
+  1. Title (20%) - AI/ML/Search engineer preferred
+  2. Career (25%) - Keywords: ranking, recommendation, retrieval, embeddings
+  3. Company (10%) - Product > consulting
+  4. Behavior (20%) - Activity, recruiter engagement, interviews
+  5. Location (5%) - Target cities + relocation willingness
+  6. Experience (5%) - 6-8 years ideal
+  7. Honeypot Detection - Trust multiplier for suspicious profiles
+  
+  Why: Career evidence beats keywords. Fast CPU-only (65 sec).
+  No GPU, no network calls, specific reasoning per candidate.
+
+submission_details:
+  total_candidates_evaluated: 100000
+  candidates_ranked: 100
+  top_score: 0.8900
+  average_score: 0.8424
+  reasoning_quality: "Specific facts from profiles with JD connection"
+
+reproducibility:
+  command: "python rank_fast.py --candidates candidates.jsonl --output team_pseudoclan.csv"
+  expected_time: "~65 seconds"
+  expected_memory: "2-3 GB"
+  language: "Python 3.12"
+  dependencies: "See requirements.txt"
