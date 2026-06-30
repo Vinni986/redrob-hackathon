@@ -1,4 +1,3 @@
-
 import json
 import logging
 import time
@@ -60,7 +59,7 @@ class FastCandidateRankingPipeline:
         ranked = []
         
         for i, candidate in enumerate(tqdm(candidates, desc="Scoring candidates")):
-            candidate_id = candidate.get("id", f"candidate_{i}")
+            candidate_id = candidate.get("candidate_id", f"candidate_{i}")
             try:
                 final_score, breakdown = self.scorer.score_candidate(
                     candidate, 
@@ -70,7 +69,11 @@ class FastCandidateRankingPipeline:
                     "candidate_id": candidate_id,
                     "final_score": final_score,
                     "breakdown": breakdown,
-                    "candidate": candidate,  # Store for reasoning
+                    "candidate": candidate,
+                    "education": self.fe.extract_education(candidate),
+                    "skills": self.fe.extract_skills(candidate),
+                    "location": self.fe.extract_location(candidate),
+                    "experience_years": self.fe.extract_total_experience_years(candidate),
                 })
             except Exception as e:
                 logger.debug(f"Error scoring {candidate_id}: {e}")
@@ -79,6 +82,10 @@ class FastCandidateRankingPipeline:
                     "final_score": 0.0,
                     "breakdown": {},
                     "candidate": candidate,
+                    "education": [],
+                    "skills": [],
+                    "location": "",
+                    "experience_years": 0,
                 })
         
         ranked.sort(key=lambda x: x["final_score"], reverse=True)
@@ -95,13 +102,36 @@ class FastCandidateRankingPipeline:
                 result["candidate"],
                 result["breakdown"]
             )
+            
+            # Format education
+            education = result.get("education", [])
+            education_str = "; ".join([
+                f"{e.get('degree', '')} in {e.get('field', '')}"
+                for e in education if e.get('degree')
+            ])
+            
+            # Format skills (top 5)
+            skills = result.get("skills", [])
+            skills_str = ", ".join(skills[:5]) if skills else ""
+            
+            # Get location
+            location = result.get("location", "")
+            
+            # Get experience
+            experience = result.get("experience_years", 0)
+            
             rows.append({
                 "candidate_id": result["candidate_id"],
                 "rank": rank,
                 "score": round(result["final_score"], 4),
+                "education": education_str,
+                "skills": skills_str,
+                "location": location,
+                "experience_years": round(experience, 1),
                 "reasoning": reasoning,
             })
         
+        # CREATE DATAFRAME AND SAVE
         df = pd.DataFrame(rows)
         df.to_csv(output_path, index=False)
         logger.info(f"Submission saved to {output_path}")

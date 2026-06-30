@@ -1,8 +1,6 @@
-
 """Feature extraction from candidate profiles."""
 
 from typing import Dict, List, Any
-from datetime import datetime
 import logging
 
 logger = logging.getLogger(__name__)
@@ -11,7 +9,7 @@ class FeatureExtractor:
     """Extract features from candidate profiles."""
 
     def __init__(self):
-        self.date_formats = ["%Y-%m-%d", "%Y/%m/%d", "%B %Y", "%b %Y", "%Y"]
+        pass
 
     def extract_current_title(self, candidate: Dict[str, Any]) -> str:
         try:
@@ -51,7 +49,7 @@ class FeatureExtractor:
                         "title": (job.get("title") or "").lower().strip(),
                         "company": (job.get("company") or "").lower().strip(),
                         "description": (job.get("description") or "").lower().strip(),
-                        "duration_months": job.get("duration_months", 0),
+                        "duration_months": int(job.get("duration_months", 0)),
                     })
             return extracted
         except:
@@ -61,14 +59,44 @@ class FeatureExtractor:
         try:
             skills = candidate.get("skills", [])
             if isinstance(skills, list):
-                return [s.lower().strip() for s in skills if isinstance(s, str)]
+                # Handle new format: list of dicts with "name" key
+                skill_names = []
+                for s in skills:
+                    if isinstance(s, dict):
+                        name = s.get("name", "")
+                    else:
+                        name = str(s)
+                    if name:
+                        skill_names.append(name.lower().strip())
+                return skill_names
             return []
+        except:
+            return []
+
+    def extract_education(self, candidate: Dict[str, Any]) -> List[Dict[str, str]]:
+        try:
+            education = candidate.get("education", [])
+            if not isinstance(education, list):
+                return []
+            
+            extracted = []
+            for edu in education:
+                if isinstance(edu, dict):
+                    extracted.append({
+                        "degree": (edu.get("degree") or "").lower().strip(),
+                        "field": (edu.get("field_of_study") or "").lower().strip(),
+                        "school": (edu.get("institution") or "").lower().strip(),
+                    })
+            return extracted
         except:
             return []
 
     def extract_redrob_signals(self, candidate: Dict[str, Any]) -> Dict[str, Any]:
         try:
             signals = candidate.get("redrob_signals", {})
+            if not isinstance(signals, dict):
+                signals = {}
+            
             return {
                 "open_to_work": signals.get("open_to_work_flag", False),
                 "recruiter_response_rate": float(signals.get("recruiter_response_rate", 0.0)),
@@ -85,9 +113,16 @@ class FeatureExtractor:
 
     def extract_total_experience_years(self, candidate: Dict[str, Any]) -> float:
         try:
+            # First try profile.years_of_experience
+            profile = candidate.get("profile", {})
+            if "years_of_experience" in profile:
+                return float(profile.get("years_of_experience", 0))
+            
+            # Fallback: sum from career_history
             career_history = self.extract_career_history(candidate)
             total_months = sum(job.get("duration_months", 0) for job in career_history)
-            return round(total_months / 12.0, 1)
+            years = total_months / 12.0
+            return round(years, 1)
         except:
             return 0.0
 
