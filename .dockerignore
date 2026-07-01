@@ -1,0 +1,8 @@
+_pycache__/
+*.pyc
+venv/
+team_pseudoclan.csv
+submission_metadata.yaml
+README.md
+*.md
+.git/

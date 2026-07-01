@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  ranking:
+    build: .
+    image: redrob-ranking:latest
+    container_name: redrob_ranking
+    mem_limit: 16g
+    cpuset_cpus: "0-3"
+    volumes:
+      - ./candidates.jsonl:/app/candidates.jsonl:ro
+      - ./output:/app/output
+    command: python rank.py --candidates /app/candidates.jsonl --out /app/output/team_pseudoclan.csv
+    network_mode: "none"
