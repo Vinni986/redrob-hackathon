@@ -119,7 +119,63 @@ You can run candidate evaluation and ranking using either the trained ML model (
     ```bash
     python rank.py --candidates candidates.jsonl --output team_pseudoclan.csv
     ```
+# 🐳 Docker Deployment
 
+Run the complete ranking pipeline using the pre-built Docker image.
+
+## Quick Start 
+
+### 1. Pull the Docker Image
+
+```bash
+docker pull vinaykush98/redrob-ranking:latest
+```
+
+### 2. Prepare Input Files
+
+Place your candidate dataset in the current directory:
+
+```text
+project/
+├── candidates.jsonl
+└── output/
+```
+
+### 3. Run the Ranking System
+
+```bash
+docker run --rm \
+    --memory=16g \
+    --network=none \
+    -v $(pwd)/candidates.jsonl:/app/candidates.jsonl:ro \
+    -v $(pwd)/output:/app/output \
+    vinaykush98/redrob-ranking:latest \
+    python rank.py \
+    --candidates /app/candidates.jsonl \
+    --out /app/output/team_pseudoclan.csv
+```
+
+### 4. Output
+
+After execution, the ranked candidate list will be generated at:
+
+```text
+output/team_pseudoclan.csv
+```
+
+## Security & Reproducibility
+
+- ✅ Runs in an isolated Docker container
+- ✅ No external network access (`--network=none`)
+- ✅ Read-only input dataset mount
+- ✅ Reproducible results across environments
+- ✅ Memory-limited execution (`16 GB`)
+
+## Docker Image
+
+```bash
+docker pull vinaykush98/redrob-ranking:latest
+```
 
 
 ### 3. Reviewing Results
