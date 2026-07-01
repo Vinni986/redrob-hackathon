@@ -120,10 +120,21 @@ You can run candidate evaluation and ranking using either the trained ML model (
     python rank.py --candidates candidates.jsonl --output team_pseudoclan.csv
     ```
 
-*   **Using Rule-Based Scoring Only:**
-    ```bash
-    python rank.py --candidates candidates.jsonl --output team_pseudoclan.csv --no-model
-    ```
+🐳 Docker Deployment
+Quick Run 
+Bash
+
+# Pull pre-built image
+docker pull vinaykush98/redrob-ranking:latest
+
+# Run ranking
+docker run --rm \
+    --memory=16g \
+    --network=none \
+    -v $(pwd)/candidates.jsonl:/app/candidates.jsonl:ro \
+    -v $(pwd)/output:/app/output \
+    vinaykush98/redrob-ranking:latest \
+    python rank.py --candidates /app/candidates.jsonl --out /app/output/team_pseudoclan.csv
 
 ### 3. Reviewing Results
 The output file is saved as a structured CSV containing candidate rankings, scores, normalized education/skills/location/experience, and a generated **fact-based reasoning sentence** limited to 160 characters.
