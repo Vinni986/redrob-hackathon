@@ -1,101 +1,101 @@
 candidate_id,rank,score,education,skills,location,experience_years,reasoning
-CAND_0008295,1,0.89,m.tech in computer engineering; m.tech in mathematics,"bm25, kubernetes, python, peft, computer vision","pune, maharashtra",6.5,Strong ML background with 6.5 years experience; Strong title match: ai research engineer
-CAND_0006567,2,0.885,b.sc in machine learning,"speech recognition, scikit-learn, search backend, model adaptation, vector representations","noida, uttar pradesh",7.9,Built ranking systems at scale; Strong title match: senior ai engineer
-CAND_0064326,3,0.875,b.tech in computer science,"scikit-learn, pytorch, milvus, deep learning, semantic search","gurgaon, haryana",7.6,Built ranking systems at scale; Strong title match: search engineer
-CAND_0015578,4,0.87,b.e. in artificial intelligence; ph.d in machine learning,"diffusion models, embeddings, nlp, data science, kafka","delhi, delhi",5.4,Deep embeddings and vector search experience; Strong title match: ai engineer
-CAND_0064130,5,0.87,m.s. in artificial intelligence,"lora, object detection, weights & biases, python, cnn","chennai, tamil nadu",6.7,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0098952,6,0.87,m.sc in computer science,"airflow, recommendation systems, statistical modeling, redis, object detection","gurgaon, haryana",5.5,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0058688,7,0.87,m.tech in machine learning,"opencv, cnn, scikit-learn, object detection, llamaindex",berlin,6.7,Built ranking systems at scale; Strong title match: ai engineer
-CAND_0062247,8,0.87,m.e. in machine learning; b.sc in information technology,"image classification, opencv, reinforcement learning, asr, pinecone","kochi, kerala",7.3,Built ranking systems at scale; Strong title match: ai engineer
-CAND_0081846,9,0.87,b.e. in data science; ph.d in computer engineering,"data science, information retrieval, llamaindex, pgvector, forecasting","jaipur, rajasthan",6.7,Built ranking systems at scale; Strong title match: lead ai engineer
-CAND_0008517,10,0.865,m.e. in statistics,"gans, feature engineering, speech recognition, lora, recommendation systems","noida, uttar pradesh",5.6,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0010541,11,0.865,b.tech in computer science; m.sc in computer engineering,"pinecone, gans, weaviate, computer vision, tts","hyderabad, telangana",6.2,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0050454,12,0.865,m.s. in machine learning; ph.d in data science,"pytorch, langchain, qlora, fine-tuning llms, faiss","delhi, delhi",6.8,Built ranking systems at scale; Strong title match: ai engineer
-CAND_0046525,13,0.865,m.s. in computer engineering; m.sc in information technology,"elasticsearch, redux, langchain, machine learning, llamaindex","pune, maharashtra",6.1,Built ranking systems at scale; Relevant title: senior machine learning engineer
-CAND_0003841,14,0.86,m.e. in computer engineering,"airflow, spring boot, diffusion models, statistical modeling, pinecone","pune, maharashtra",5.0,Built ranking systems at scale; Relevant title: ml engineer
-CAND_0031593,15,0.86,ph.d in information technology,"haystack, opencv, hugging face transformers, cnn, java","kolkata, west bengal",7.8,Built ranking systems at scale; Strong title match: search engineer
-CAND_0064904,16,0.86,b.tech in information technology; m.e. in data science,"embeddings, hugging face transformers, elasticsearch, diffusion models, forecasting","hyderabad, telangana",4.9,Built ranking systems at scale; Strong title match: ai engineer
-CAND_0092706,17,0.86,b.sc in data science,"weights & biases, speech recognition, data science, agile, sentence transformers","delhi, delhi",5.8,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0098846,18,0.86,ph.d in machine learning,"yolo, kubeflow, hugging face transformers, hadoop, peft","indore, madhya pradesh",7.6,Built ranking systems at scale; Strong title match: ai engineer
-CAND_0006418,19,0.86,m.s. in data science,"kubernetes, grpc, semantic search, embeddings, tensorflow","gurgaon, haryana",5.7,Built ranking systems at scale; Relevant title: machine learning engineer
-CAND_0073620,20,0.855,m.sc in computer engineering,"tts, asr, lora, semantic search, python","noida, uttar pradesh",4.4,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0097176,21,0.855,ph.d in computer engineering; m.e. in data science,"angular, faiss, speech recognition, llamaindex, gans","gurgaon, haryana",5.9,Built ranking systems at scale; Relevant title: ml engineer
-CAND_0011327,22,0.855,b.tech in computer engineering,"time series, sales, weights & biases, mlflow, sentence transformers","gurgaon, haryana",6.3,Built ranking systems at scale; Strong title match: ai research engineer
-CAND_0018499,23,0.855,b.sc in artificial intelligence; m.s. in data science,"deep learning, weaviate, recommendation systems, scikit-learn, diffusion models","noida, uttar pradesh",7.2,Built ranking systems at scale; Relevant title: senior machine learning engineer
-CAND_0039383,24,0.855,b.sc in artificial intelligence,"gans, faiss, asr, kubeflow, recommendation systems","gurgaon, haryana",7.1,Built ranking systems at scale; Relevant title: applied ml engineer
-CAND_0044890,25,0.855,b.tech in machine learning,"faiss, rust, forecasting, llms, bentoml","bhubaneswar, odisha",5.0,Strong ML background with 5.0 years experience; Strong title match: ai research engineer
-CAND_0061257,26,0.855,m.s. in computer science; m.e. in artificial intelligence,"peft, haystack, time series, machine learning, information retrieval systems","noida, uttar pradesh",8.0,Built ranking systems at scale; Relevant title: staff machine learning engineer
-CAND_0099806,27,0.855,m.tech in computer engineering,"lora, opencv, statistical modeling, rag, agile","bhubaneswar, odisha",4.6,Built ranking systems at scale; Strong title match: ai engineer
-CAND_0040200,28,0.85,m.sc in artificial intelligence,"faiss, nlp, apache beam, weaviate, computer vision","pune, maharashtra",5.5,Strong ML background with 5.5 years experience; Strong title match: ai research engineer
-CAND_0068932,29,0.85,m.s. in electrical engineering,"marketing, javascript, agile, mlops, reinforcement learning","noida, uttar pradesh",5.2,Built ranking systems at scale; Relevant title: ml engineer
-CAND_0069905,30,0.85,m.e. in computer engineering,"flask, redux, lora, computer vision, speech recognition","bhubaneswar, odisha",6.6,Strong retrieval/search systems expertise
-CAND_0077337,31,0.85,b.tech in computer engineering,"gans, semantic search, qlora, pgvector, pinecone","kochi, kerala",7.0,Built ranking systems at scale
-CAND_0010149,32,0.845,m.e. in computer engineering; b.sc in machine learning,"computer vision, diffusion models, milvus, vector search, object detection","bangalore, karnataka",6.9,Built ranking systems at scale
-CAND_0033179,33,0.845,m.s. in statistics,"fastapi, weights & biases, hugging face transformers, opensearch, diffusion models","ahmedabad, gujarat",6.9,Built ranking systems at scale
-CAND_0043304,34,0.845,b.tech in electronics; ph.d in statistics,"langchain, sentence transformers, machine learning, diffusion models, kubeflow","trivandrum, kerala",6.5,Built ranking systems at scale
-CAND_0004402,35,0.845,m.tech in information technology; b.tech in information technology,"typescript, tts, opensearch, speech recognition, object detection","delhi, delhi",6.0,Built ranking systems at scale
-CAND_0018888,36,0.845,m.sc in chemical engineering; b.tech in chemical engineering,"diffusion models, gans, mlflow, bentoml, reinforcement learning","noida, uttar pradesh",6.5,Strong ML background with 6.5 years experience
-CAND_0043829,37,0.845,b.sc in computer engineering; ph.d in mathematics,"machine learning, qdrant, go, dbt, hadoop","bangalore, karnataka",4.8,Strong ML background with 4.8 years experience
-CAND_0058575,38,0.845,m.tech in computer engineering; m.e. in data science,"mlops, machine learning, llamaindex, time series, recommendation systems","chennai, tamil nadu",5.8,Strong retrieval/search systems expertise
-CAND_0061339,39,0.845,b.sc in data science,"information retrieval, yolo, data pipelines, milvus, bentoml","chandigarh, chandigarh",4.2,Built ranking systems at scale
-CAND_0055992,40,0.845,m.e. in computer engineering; b.tech in information technology,"information retrieval, mlflow, faiss, rag, feature engineering",sydney,16.9,Built ranking systems at scale
-CAND_0015065,41,0.84,m.sc in machine learning; m.tech in data science,"embeddings, data science, llamaindex, qdrant, css","delhi, delhi",3.9,Built ranking systems at scale; minor: Junior (3.9 years; role needs 6-8)
-CAND_0040178,42,0.84,ph.d in information technology,"weaviate, fine-tuning llms, tts, vector search, learning to rank","pune, maharashtra",5.0,Built ranking systems at scale
-CAND_0042100,43,0.84,b.tech in information technology,"elasticsearch, statistical modeling, learning to rank, recommendation systems, semantic search",singapore,7.3,Built ranking systems at scale
-CAND_0043381,44,0.84,b.sc in computer engineering,"scikit-learn, etl, bm25, forecasting, opensearch","pune, maharashtra",3.6,Built ranking systems at scale; minor: Junior (3.6 years; role needs 6-8)
-CAND_0044883,45,0.84,b.sc in machine learning,"cnn, bm25, computer vision, prompt engineering, embeddings",berlin,6.3,Built ranking systems at scale
-CAND_0046132,46,0.84,m.e. in machine learning,"kubeflow, data science, opencv, information retrieval, gans","noida, uttar pradesh",4.3,Built ranking systems at scale
-CAND_0052335,47,0.84,b.e. in data science,"diffusion models, pytorch, gans, machine learning, learning to rank",berlin,6.4,Built ranking systems at scale
-CAND_0071974,48,0.84,m.sc in artificial intelligence,"lora, learning to rank, weaviate, peft, bm25","vizag, andhra pradesh",7.8,Built ranking systems at scale
-CAND_0079387,49,0.84,m.sc in computer science; b.e. in data science,"scikit-learn, recommendation systems, python, time series, sentence transformers","trivandrum, kerala",6.9,Built ranking systems at scale
-CAND_0090155,50,0.84,m.e. in information technology,"opencv, weights & biases, gans, milvus, cnn","pune, maharashtra",5.8,Strong ML background with 5.8 years experience
-CAND_0091890,51,0.84,m.e. in computer engineering,"statistical modeling, scikit-learn, weights & biases, elasticsearch, pinecone","hyderabad, telangana",4.7,Built ranking systems at scale
-CAND_0094685,52,0.84,b.sc in machine learning; ph.d in data science,"weaviate, feature engineering, mlflow, mlops, yolo","pune, maharashtra",3.5,Built ranking systems at scale; minor: Junior (3.5 years; role needs 6-8)
-CAND_0062413,53,0.8375,m.sc in computer science; m.e. in artificial intelligence,"asr, diffusion models, learning to rank, semantic search, opensearch","mumbai, maharashtra",6.6,ML engineering background (ai research engineer)
-CAND_0016170,54,0.835,b.e. in computer engineering,"sentence transformers, reinforcement learning, time series, postgresql, embeddings",sydney,6.8,Built ranking systems at scale
-CAND_0021491,55,0.835,b.sc in artificial intelligence,"recommendation systems, docker, speech recognition, spring boot, scikit-learn","bhubaneswar, odisha",6.1,Strong ML background with 6.1 years experience
-CAND_0001131,56,0.835,b.sc in data science; b.tech in artificial intelligence,"semantic search, speech recognition, computer vision, vector search, rag","chennai, tamil nadu",5.8,Strong ML background with 5.8 years experience
-CAND_0002025,57,0.835,m.sc in data science; m.s. in data science,"diffusion models, faiss, tensorflow, scikit-learn, opensearch","trivandrum, kerala",5.9,Built ranking systems at scale
-CAND_0005538,58,0.835,b.tech in data science,"project management, vector representations, deep learning, content matching, apache flink","kolkata, west bengal",5.9,Built ranking systems at scale
-CAND_0007412,59,0.835,m.tech in computer science; m.s. in artificial intelligence,"node.js, scikit-learn, data science, pinecone, milvus","noida, uttar pradesh",7.4,Built ranking systems at scale; minor: 120-day notice period
-CAND_0024620,60,0.835,m.sc in information technology,"statistical modeling, object detection, semantic search, bm25, information retrieval",new york,5.9,Built ranking systems at scale
-CAND_0033987,61,0.835,m.sc in artificial intelligence,"recommendation systems, feature engineering, peft, kubeflow, image classification","delhi, delhi",6.8,Built ranking systems at scale
-CAND_0053591,62,0.835,m.tech in information technology,"langchain, reinforcement learning, embeddings, milvus, opensearch",toronto,5.3,Built ranking systems at scale
-CAND_0065195,63,0.835,m.sc in artificial intelligence,"llms, bentoml, qlora, scikit-learn, diffusion models","kolkata, west bengal",5.1,Deep embeddings and vector search experience
-CAND_0069248,64,0.835,m.tech in computer science,"opencv, illustrator, computer vision, bentoml, tensorflow","vizag, andhra pradesh",5.4,Built ranking systems at scale; minor: 120-day notice period
-CAND_0073504,65,0.835,ph.d in electrical engineering; m.sc in information technology,"elasticsearch, angular, langchain, image classification, tts","gurgaon, haryana",6.6,Built ranking systems at scale
-CAND_0075574,66,0.835,m.s. in computer science,"hugging face transformers, pgvector, weaviate, recommendation systems, opensearch","bangalore, karnataka",5.7,Built ranking systems at scale
-CAND_0094165,67,0.835,ph.d in data science; m.e. in chemical engineering,"object detection, hadoop, data pipelines, time series, speech recognition","chandigarh, chandigarh",5.8,Strong ML background with 5.8 years experience
-CAND_0090300,68,0.83,m.tech in data science; m.s. in information technology,"data science, mlflow, machine learning, fine-tuning llms, bentoml",san francisco,5.3,Built ranking systems at scale; minor: 120-day notice period
-CAND_0005311,69,0.83,b.tech in computer engineering; b.sc in computer science,"lora, feature engineering, bentoml, prompt engineering, fastapi","mumbai, maharashtra",5.7,Strong ML background with 5.7 years experience
-CAND_0028793,70,0.83,b.e. in artificial intelligence; b.sc in computer engineering,"sap, kubeflow, embeddings, haystack, yolo","trivandrum, kerala",7.2,Built ranking systems at scale; minor: 120-day notice period
-CAND_0035879,71,0.83,b.e. in machine learning; m.e. in machine learning,"ci/cd, vue.js, statistical modeling, css, pinecone","noida, uttar pradesh",4.5,Built ranking systems at scale; minor: 120-day notice period
-CAND_0042506,72,0.83,b.tech in machine learning; m.e. in computer science,"peft, tts, scikit-learn, opencv, semantic search","mumbai, maharashtra",4.2,Built ranking systems at scale
-CAND_0043860,73,0.83,m.e. in artificial intelligence,"pgvector, feature engineering, object detection, semantic search, information retrieval","bhubaneswar, odisha",6.1,Built ranking systems at scale
-CAND_0044222,74,0.83,m.sc in machine learning,"vector search, llamaindex, opensearch, java, qdrant","vizag, andhra pradesh",7.7,Built ranking systems at scale
-CAND_0048509,75,0.83,b.tech in information technology,"statistical modeling, data science, learning to rank, pinecone, next.js","noida, uttar pradesh",4.2,Strong ML background with 4.2 years experience
-CAND_0076251,76,0.83,b.e. in data science,"fine-tuning llms, reinforcement learning, hugging face transformers, weaviate, time series","bhubaneswar, odisha",7.6,Strong retrieval/search systems expertise
-CAND_0082489,77,0.83,b.e. in computer science; m.tech in information technology,"kubeflow, haystack, weaviate, mlflow, redux","noida, uttar pradesh",5.3,Built ranking systems at scale
-CAND_0091534,78,0.83,m.tech in computer engineering,"hugging face transformers, scikit-learn, diffusion models, qdrant, sentence transformers","gurgaon, haryana",16.6,Built ranking systems at scale
-CAND_0091909,79,0.83,m.e. in information technology,"llms, image classification, pinecone, diffusion models, qlora","bangalore, karnataka",6.9,Built ranking systems at scale
-CAND_0030468,80,0.825,m.tech in machine learning; m.tech in machine learning,"information retrieval systems, content matching, text encoders, tensorflow, search & discovery","indore, madhya pradesh",5.4,Built ranking systems at scale
-CAND_0038949,81,0.825,b.sc in computer science,"pgvector, diffusion models, reinforcement learning, kubeflow, elasticsearch","bhubaneswar, odisha",6.4,Strong ML background with 6.4 years experience; minor: 120-day notice period
-CAND_0047521,82,0.825,m.s. in computer engineering; b.sc in computer science,"yolo, fastapi, llamaindex, speech recognition, scikit-learn","mumbai, maharashtra",4.4,Built ranking systems at scale; minor: 120-day notice period
-CAND_0067535,83,0.825,b.e. in information technology,"deep learning, bentoml, flask, java, yolo","jaipur, rajasthan",6.8,Built ranking systems at scale
-CAND_0092255,84,0.825,b.e. in artificial intelligence,"machine learning, pytorch, statistical modeling, figma, weaviate","noida, uttar pradesh",5.2,Built ranking systems at scale
-CAND_0001819,85,0.825,m.tech in information technology; m.tech in computer science,"apache flink, object detection, weaviate, pytorch, recommendation systems","coimbatore, tamil nadu",4.4,Strong ML background with 4.4 years experience
-CAND_0004972,86,0.825,m.tech in artificial intelligence,"data science, semantic search, rag, tts, postgresql","gurgaon, haryana",6.0,Strong ML background with 6.0 years experience
-CAND_0016163,87,0.825,m.e. in machine learning,"hugging face transformers, computer vision, grpc, time series, weaviate","gurgaon, haryana",6.7,Strong retrieval/search systems expertise; minor: 120-day notice period
-CAND_0020708,88,0.825,m.sc in machine learning; b.e. in data science,"tally, nlp, data science, statistical modeling, scikit-learn","indore, madhya pradesh",4.2,Strong retrieval/search systems expertise
-CAND_0032271,89,0.825,m.sc in artificial intelligence,"langchain, peft, redux, image classification, kafka","hyderabad, telangana",6.6,Built ranking systems at scale; minor: 120-day notice period
-CAND_0036437,90,0.825,b.tech in machine learning,"go, kubeflow, opensearch, elasticsearch, feature engineering","kolkata, west bengal",4.8,Built ranking systems at scale
-CAND_0061175,91,0.825,m.e. in machine learning,"python, milvus, recommendation systems, vector search, llamaindex","gurgaon, haryana",6.7,Built ranking systems at scale; minor: 120-day notice period
-CAND_0068351,92,0.825,m.e. in computer science; b.tech in computer engineering,"pgvector, deep learning, qdrant, elasticsearch, feature engineering","delhi, delhi",6.4,Built ranking systems at scale
-CAND_0068811,93,0.825,ph.d in artificial intelligence; m.e. in information technology,"data science, vector search, speech recognition, tts, kubeflow","pune, maharashtra",8.0,Built ranking systems at scale
-CAND_0072232,94,0.825,m.e. in information technology,"tensorflow, reinforcement learning, mlflow, powerpoint, forecasting","kolkata, west bengal",4.0,Built ranking systems at scale
-CAND_0081709,95,0.825,b.sc in machine learning; b.tech in data science,"weaviate, image classification, time series, scrum, peft","jaipur, rajasthan",5.5,Strong ML background with 5.5 years experience
-CAND_0087630,96,0.825,b.e. in data science,"data science, gans, asr, elasticsearch, flask","gurgaon, haryana",7.2,Built ranking systems at scale
-CAND_0089470,97,0.825,m.tech in artificial intelligence,"pytorch, feature engineering, graphql, weaviate, bm25","pune, maharashtra",6.5,Strong ML background with 6.5 years experience
-CAND_0059017,98,0.8225,ph.d in computer science,"speech recognition, sentence transformers, faiss, object detection, machine learning","ahmedabad, gujarat",6.8,ML engineering background (ai research engineer)
-CAND_0025640,99,0.82,m.e. in computer engineering,"semantic search, peft, information retrieval, weights & biases, faiss","jaipur, rajasthan",5.6,Built ranking systems at scale
-CAND_0036121,100,0.82,m.sc in physics,"scrum, embeddings, diffusion models, statistical modeling, bm25","chennai, tamil nadu",5.2,Strong ML background with 5.2 years experience
+CAND_0006567,1,0.8072,b.sc in machine learning,"speech recognition, scikit-learn, search backend, model adaptation, vector representations","noida, uttar pradesh",7.9,Built ranking systems at scale
+CAND_0008295,2,0.8071,m.tech in computer engineering; m.tech in mathematics,"bm25, kubernetes, python, peft, computer vision","pune, maharashtra",6.5,Strong ML background with 6.5 years experience
+CAND_0064326,3,0.8005,b.tech in computer science,"scikit-learn, pytorch, milvus, deep learning, semantic search","gurgaon, haryana",7.6,Built ranking systems at scale
+CAND_0015578,4,0.7988,b.e. in artificial intelligence; ph.d in machine learning,"diffusion models, embeddings, nlp, data science, kafka","delhi, delhi",5.4,Deep embeddings and vector search experience
+CAND_0098952,5,0.7988,m.sc in computer science,"airflow, recommendation systems, statistical modeling, redis, object detection","gurgaon, haryana",5.5,Built ranking systems at scale
+CAND_0058688,6,0.7918,m.tech in machine learning,"opencv, cnn, scikit-learn, object detection, llamaindex",berlin,6.7,Built ranking systems at scale
+CAND_0062247,7,0.7918,m.e. in machine learning; b.sc in information technology,"image classification, opencv, reinforcement learning, asr, pinecone","kochi, kerala",7.3,Built ranking systems at scale
+CAND_0081846,8,0.7918,b.e. in data science; ph.d in computer engineering,"data science, information retrieval, llamaindex, pgvector, forecasting","jaipur, rajasthan",6.7,Built ranking systems at scale
+CAND_0046525,9,0.7905,m.s. in computer engineering; m.sc in information technology,"elasticsearch, redux, langchain, machine learning, llamaindex","pune, maharashtra",6.1,Built ranking systems at scale
+CAND_0010541,10,0.7891,b.tech in computer science; m.sc in computer engineering,"pinecone, gans, weaviate, computer vision, tts","hyderabad, telangana",6.2,Built ranking systems at scale
+CAND_0050454,11,0.7891,m.s. in machine learning; ph.d in data science,"pytorch, langchain, qlora, fine-tuning llms, faiss","delhi, delhi",6.8,Built ranking systems at scale
+CAND_0092706,12,0.7874,b.sc in data science,"weights & biases, speech recognition, data science, agile, sentence transformers","delhi, delhi",5.8,Built ranking systems at scale; minor: 120-day notice period
+CAND_0064904,13,0.7874,b.tech in information technology; m.e. in data science,"embeddings, hugging face transformers, elasticsearch, diffusion models, forecasting","hyderabad, telangana",4.9,Built ranking systems at scale
+CAND_0006418,14,0.787,m.s. in data science,"kubernetes, grpc, semantic search, embeddings, tensorflow","gurgaon, haryana",5.7,Built ranking systems at scale
+CAND_0008517,15,0.7852,m.e. in statistics,"gans, feature engineering, speech recognition, lora, recommendation systems","noida, uttar pradesh",5.6,Built ranking systems at scale; minor: 120-day notice period
+CAND_0031593,16,0.7851,ph.d in information technology,"haystack, opencv, hugging face transformers, cnn, java","kolkata, west bengal",7.8,Built ranking systems at scale
+CAND_0098846,17,0.7851,ph.d in machine learning,"yolo, kubeflow, hugging face transformers, hadoop, peft","indore, madhya pradesh",7.6,Built ranking systems at scale
+CAND_0097176,18,0.7844,ph.d in computer engineering; m.e. in data science,"angular, faiss, speech recognition, llamaindex, gans","gurgaon, haryana",5.9,Built ranking systems at scale
+CAND_0018499,19,0.7842,b.sc in artificial intelligence; m.s. in data science,"deep learning, weaviate, recommendation systems, scikit-learn, diffusion models","noida, uttar pradesh",7.2,Built ranking systems at scale
+CAND_0039383,20,0.7842,b.sc in artificial intelligence,"gans, faiss, asr, kubeflow, recommendation systems","gurgaon, haryana",7.1,Built ranking systems at scale
+CAND_0061257,21,0.7842,m.s. in computer science; m.e. in artificial intelligence,"peft, haystack, time series, machine learning, information retrieval systems","noida, uttar pradesh",8.0,Built ranking systems at scale
+CAND_0003841,22,0.7837,m.e. in computer engineering,"airflow, spring boot, diffusion models, statistical modeling, pinecone","pune, maharashtra",5.0,Built ranking systems at scale
+CAND_0044890,23,0.7819,b.tech in machine learning,"faiss, rust, forecasting, llms, bentoml","bhubaneswar, odisha",5.0,Strong ML background with 5.0 years experience
+CAND_0011327,24,0.7815,b.tech in computer engineering,"time series, sales, weights & biases, mlflow, sentence transformers","gurgaon, haryana",6.3,Built ranking systems at scale
+CAND_0068932,25,0.7813,m.s. in electrical engineering,"marketing, javascript, agile, mlops, reinforcement learning","noida, uttar pradesh",5.2,Built ranking systems at scale
+CAND_0040200,26,0.7797,m.sc in artificial intelligence,"faiss, nlp, apache beam, weaviate, computer vision","pune, maharashtra",5.5,Strong ML background with 5.5 years experience
+CAND_0064130,27,0.7788,m.s. in artificial intelligence,"lora, object detection, weights & biases, python, cnn","chennai, tamil nadu",6.7,Built ranking systems at scale
+CAND_0099806,28,0.7771,m.tech in computer engineering,"lora, opencv, statistical modeling, rag, agile","bhubaneswar, odisha",4.6,Built ranking systems at scale
+CAND_0073620,29,0.777,m.sc in computer engineering,"tts, asr, lora, semantic search, python","noida, uttar pradesh",4.4,Built ranking systems at scale
+CAND_0069905,30,0.774,m.e. in computer engineering,"flask, redux, lora, computer vision, speech recognition","bhubaneswar, odisha",6.6,Strong retrieval/search systems expertise
+CAND_0077337,31,0.774,b.tech in computer engineering,"gans, semantic search, qlora, pgvector, pinecone","kochi, kerala",7.0,Built ranking systems at scale
+CAND_0046132,32,0.7724,m.e. in machine learning,"kubeflow, data science, opencv, information retrieval, gans","noida, uttar pradesh",4.3,Built ranking systems at scale
+CAND_0058575,33,0.7705,m.tech in computer engineering; m.e. in data science,"mlops, machine learning, llamaindex, time series, recommendation systems","chennai, tamil nadu",5.8,Strong retrieval/search systems expertise
+CAND_0043829,34,0.7702,b.sc in computer engineering; ph.d in mathematics,"machine learning, qdrant, go, dbt, hadoop","bangalore, karnataka",4.8,Strong ML background with 4.8 years experience
+CAND_0061339,35,0.7702,b.sc in data science,"information retrieval, yolo, data pipelines, milvus, bentoml","chandigarh, chandigarh",4.2,Built ranking systems at scale
+CAND_0040178,36,0.7699,ph.d in information technology,"weaviate, fine-tuning llms, tts, vector search, learning to rank","pune, maharashtra",5.0,Built ranking systems at scale
+CAND_0090155,37,0.7699,m.e. in information technology,"opencv, weights & biases, gans, milvus, cnn","pune, maharashtra",5.8,Strong ML background with 5.8 years experience
+CAND_0010149,38,0.7698,m.e. in computer engineering; b.sc in machine learning,"computer vision, diffusion models, milvus, vector search, object detection","bangalore, karnataka",6.9,Built ranking systems at scale
+CAND_0043304,39,0.7698,b.tech in electronics; ph.d in statistics,"langchain, sentence transformers, machine learning, diffusion models, kubeflow","trivandrum, kerala",6.5,Built ranking systems at scale
+CAND_0071974,40,0.7681,m.sc in artificial intelligence,"lora, learning to rank, weaviate, peft, bm25","vizag, andhra pradesh",7.8,Built ranking systems at scale
+CAND_0079387,41,0.7681,m.sc in computer science; b.e. in data science,"scikit-learn, recommendation systems, python, time series, sentence transformers","trivandrum, kerala",6.9,Built ranking systems at scale
+CAND_0042100,42,0.7677,b.tech in information technology,"elasticsearch, statistical modeling, learning to rank, recommendation systems, semantic search",singapore,7.3,Built ranking systems at scale
+CAND_0052335,43,0.7677,b.e. in data science,"diffusion models, pytorch, gans, machine learning, learning to rank",berlin,6.4,Built ranking systems at scale
+CAND_0004402,44,0.7668,m.tech in information technology; b.tech in information technology,"typescript, tts, opensearch, speech recognition, object detection","delhi, delhi",6.0,Built ranking systems at scale
+CAND_0018888,45,0.7668,m.sc in chemical engineering; b.tech in chemical engineering,"diffusion models, gans, mlflow, bentoml, reinforcement learning","noida, uttar pradesh",6.5,Strong ML background with 6.5 years experience
+CAND_0007412,46,0.7651,m.tech in computer science; m.s. in artificial intelligence,"node.js, scikit-learn, data science, pinecone, milvus","noida, uttar pradesh",7.4,Built ranking systems at scale; minor: 120-day notice period
+CAND_0033987,47,0.7651,m.sc in artificial intelligence,"recommendation systems, feature engineering, peft, kubeflow, image classification","delhi, delhi",6.8,Built ranking systems at scale
+CAND_0073504,48,0.7651,ph.d in electrical engineering; m.sc in information technology,"elasticsearch, angular, langchain, image classification, tts","gurgaon, haryana",6.6,Built ranking systems at scale
+CAND_0044883,49,0.7648,b.sc in machine learning,"cnn, bm25, computer vision, prompt engineering, embeddings",berlin,6.3,Built ranking systems at scale
+CAND_0055992,50,0.7647,m.e. in computer engineering; b.tech in information technology,"information retrieval, mlflow, faiss, rag, feature engineering",sydney,16.9,Built ranking systems at scale
+CAND_0001131,51,0.7645,b.sc in data science; b.tech in artificial intelligence,"semantic search, speech recognition, computer vision, vector search, rag","chennai, tamil nadu",5.8,Strong ML background with 5.8 years experience
+CAND_0075574,52,0.7645,m.s. in computer science,"hugging face transformers, pgvector, weaviate, recommendation systems, opensearch","bangalore, karnataka",5.7,Built ranking systems at scale
+CAND_0002025,53,0.7639,m.sc in data science; m.s. in data science,"diffusion models, faiss, tensorflow, scikit-learn, opensearch","trivandrum, kerala",5.9,Built ranking systems at scale
+CAND_0005538,54,0.7639,b.tech in data science,"project management, vector representations, deep learning, content matching, apache flink","kolkata, west bengal",5.9,Built ranking systems at scale
+CAND_0053591,55,0.7639,m.tech in information technology,"langchain, reinforcement learning, embeddings, milvus, opensearch",toronto,5.3,Built ranking systems at scale
+CAND_0065195,56,0.7639,m.sc in artificial intelligence,"llms, bentoml, qlora, scikit-learn, diffusion models","kolkata, west bengal",5.1,Deep embeddings and vector search experience
+CAND_0094165,57,0.7639,ph.d in data science; m.e. in chemical engineering,"object detection, hadoop, data pipelines, time series, speech recognition","chandigarh, chandigarh",5.8,Strong ML background with 5.8 years experience
+CAND_0033179,58,0.7626,m.s. in statistics,"fastapi, weights & biases, hugging face transformers, opensearch, diffusion models","ahmedabad, gujarat",6.9,Built ranking systems at scale
+CAND_0015065,59,0.7624,m.sc in machine learning; m.tech in data science,"embeddings, data science, llamaindex, qdrant, css","delhi, delhi",3.9,Built ranking systems at scale; minor: Junior (3.9 years; role needs 6-8)
+CAND_0043381,60,0.7624,b.sc in computer engineering,"scikit-learn, etl, bm25, forecasting, opensearch","pune, maharashtra",3.6,Built ranking systems at scale; minor: Junior (3.6 years; role needs 6-8)
+CAND_0094685,61,0.7624,b.sc in machine learning; ph.d in data science,"weaviate, feature engineering, mlflow, mlops, yolo","pune, maharashtra",3.5,Built ranking systems at scale; minor: Junior (3.5 years; role needs 6-8)
+CAND_0082489,62,0.7621,b.e. in computer science; m.tech in information technology,"kubeflow, haystack, weaviate, mlflow, redux","noida, uttar pradesh",5.3,Built ranking systems at scale
+CAND_0024620,63,0.7614,m.sc in information technology,"statistical modeling, object detection, semantic search, bm25, information retrieval",new york,5.9,Built ranking systems at scale
+CAND_0069248,64,0.7614,m.tech in computer science,"opencv, illustrator, computer vision, bentoml, tensorflow","vizag, andhra pradesh",5.4,Built ranking systems at scale; minor: 120-day notice period
+CAND_0062413,65,0.7606,m.sc in computer science; m.e. in artificial intelligence,"asr, diffusion models, learning to rank, semantic search, opensearch","mumbai, maharashtra",6.6,ML engineering background (ai research engineer)
+CAND_0044222,66,0.759,m.sc in machine learning,"vector search, llamaindex, opensearch, java, qdrant","vizag, andhra pradesh",7.7,Built ranking systems at scale
+CAND_0030468,67,0.7567,m.tech in machine learning; m.tech in machine learning,"information retrieval systems, content matching, text encoders, tensorflow, search & discovery","indore, madhya pradesh",5.4,Built ranking systems at scale
+CAND_0035879,68,0.7566,b.e. in machine learning; m.e. in machine learning,"ci/cd, vue.js, statistical modeling, css, pinecone","noida, uttar pradesh",4.5,Built ranking systems at scale; minor: 120-day notice period
+CAND_0042506,69,0.7566,b.tech in machine learning; m.e. in computer science,"peft, tts, scikit-learn, opencv, semantic search","mumbai, maharashtra",4.2,Built ranking systems at scale
+CAND_0043860,70,0.7564,m.e. in artificial intelligence,"pgvector, feature engineering, object detection, semantic search, information retrieval","bhubaneswar, odisha",6.1,Built ranking systems at scale
+CAND_0091909,71,0.7564,m.e. in information technology,"llms, image classification, pinecone, diffusion models, qlora","bangalore, karnataka",6.9,Built ranking systems at scale
+CAND_0016170,72,0.7558,b.e. in computer engineering,"sentence transformers, reinforcement learning, time series, postgresql, embeddings",sydney,6.8,Built ranking systems at scale
+CAND_0021491,73,0.7558,b.sc in artificial intelligence,"recommendation systems, docker, speech recognition, spring boot, scikit-learn","bhubaneswar, odisha",6.1,Strong ML background with 6.1 years experience
+CAND_0036437,74,0.7551,b.tech in machine learning,"go, kubeflow, opensearch, elasticsearch, feature engineering","kolkata, west bengal",4.8,Built ranking systems at scale
+CAND_0081709,75,0.7549,b.sc in machine learning; b.tech in data science,"weaviate, image classification, time series, scrum, peft","jaipur, rajasthan",5.5,Strong ML background with 5.5 years experience
+CAND_0091890,76,0.7545,m.e. in computer engineering,"statistical modeling, scikit-learn, weights & biases, elasticsearch, pinecone","hyderabad, telangana",4.7,Built ranking systems at scale
+CAND_0091534,77,0.7545,m.tech in computer engineering,"hugging face transformers, scikit-learn, diffusion models, qdrant, sentence transformers","gurgaon, haryana",16.6,Built ranking systems at scale
+CAND_0005311,78,0.7539,b.tech in computer engineering; b.sc in computer science,"lora, feature engineering, bentoml, prompt engineering, fastapi","mumbai, maharashtra",5.7,Strong ML background with 5.7 years experience
+CAND_0037980,79,0.7532,b.e. in machine learning,"lora, search infrastructure, pytorch, nlp, indexing algorithms","kolkata, west bengal",9.0,Built ranking systems at scale
+CAND_0047521,80,0.7526,m.s. in computer engineering; b.sc in computer science,"yolo, fastapi, llamaindex, speech recognition, scikit-learn","mumbai, maharashtra",4.4,Built ranking systems at scale; minor: 120-day notice period
+CAND_0000422,81,0.7515,m.tech in computer engineering,"mlflow, python, photoshop, milvus, java","kolkata, west bengal",6.3,Built ranking systems at scale
+CAND_0088378,82,0.7515,b.tech in information technology,"java, dbt, time series, data science, image classification","jaipur, rajasthan",6.0,Strong ML background with 6.0 years experience
+CAND_0004972,83,0.7504,m.tech in artificial intelligence,"data science, semantic search, rag, tts, postgresql","gurgaon, haryana",6.0,Strong ML background with 6.0 years experience
+CAND_0016163,84,0.7504,m.e. in machine learning,"hugging face transformers, computer vision, grpc, time series, weaviate","gurgaon, haryana",6.7,Strong retrieval/search systems expertise; minor: 120-day notice period
+CAND_0068811,85,0.7504,ph.d in artificial intelligence; m.e. in information technology,"data science, vector search, speech recognition, tts, kubeflow","pune, maharashtra",8.0,Built ranking systems at scale
+CAND_0032271,86,0.7498,m.sc in artificial intelligence,"langchain, peft, redux, image classification, kafka","hyderabad, telangana",6.6,Built ranking systems at scale; concern: 120-day notice period
+CAND_0061175,87,0.7498,m.e. in machine learning,"python, milvus, recommendation systems, vector search, llamaindex","gurgaon, haryana",6.7,Built ranking systems at scale; concern: 120-day notice period
+CAND_0068351,88,0.7498,m.e. in computer science; b.tech in computer engineering,"pgvector, deep learning, qdrant, elasticsearch, feature engineering","delhi, delhi",6.4,Built ranking systems at scale
+CAND_0087630,89,0.7498,b.e. in data science,"data science, gans, asr, elasticsearch, flask","gurgaon, haryana",7.2,Built ranking systems at scale
+CAND_0089470,90,0.7498,m.tech in artificial intelligence,"pytorch, feature engineering, graphql, weaviate, bm25","pune, maharashtra",6.5,Strong ML background with 6.5 years experience
+CAND_0038949,91,0.7498,b.sc in computer science,"pgvector, diffusion models, reinforcement learning, kubeflow, elasticsearch","bhubaneswar, odisha",6.4,Strong ML background with 6.4 years experience; concern: 120-day notice period
+CAND_0007596,92,0.7495,b.sc in information technology; b.e. in data science,"reinforcement learning, yolo, scikit-learn, object detection, machine learning","delhi, delhi",4.4,Built ranking systems at scale
+CAND_0021410,93,0.7495,b.e. in information technology,"statistical modeling, dbt, time series, pytorch, computer vision","hyderabad, telangana",4.0,Built ranking systems at scale
+CAND_0028793,94,0.7495,b.e. in artificial intelligence; b.sc in computer engineering,"sap, kubeflow, embeddings, haystack, yolo","trivandrum, kerala",7.2,Built ranking systems at scale; concern: 120-day notice period
+CAND_0076251,95,0.7495,b.e. in data science,"fine-tuning llms, reinforcement learning, hugging face transformers, weaviate, time series","bhubaneswar, odisha",7.6,Strong retrieval/search systems expertise
+CAND_0092255,96,0.7493,b.e. in artificial intelligence,"machine learning, pytorch, statistical modeling, figma, weaviate","noida, uttar pradesh",5.2,Built ranking systems at scale
+CAND_0067535,97,0.7487,b.e. in information technology,"deep learning, bentoml, flask, java, yolo","jaipur, rajasthan",6.8,Built ranking systems at scale
+CAND_0037160,98,0.7486,ph.d in data science; b.sc in data science,"tts, deep learning, llms, weaviate, computer vision","mumbai, maharashtra",6.0,Built ranking systems at scale
+CAND_0020708,99,0.7476,m.sc in machine learning; b.e. in data science,"tally, nlp, data science, statistical modeling, scikit-learn","indore, madhya pradesh",4.2,Strong retrieval/search systems expertise
+CAND_0001819,100,0.7476,m.tech in information technology; m.tech in computer science,"apache flink, object detection, weaviate, pytorch, recommendation systems","coimbatore, tamil nadu",4.4,Strong ML background with 4.4 years experience

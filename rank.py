@@ -2,8 +2,10 @@ import json
 import logging
 import time
 from typing import List, Dict, Any
+import numpy as np
 import pandas as pd
 from tqdm import tqdm
+import joblib
 
 from feature_extractor import FeatureExtractor
 from honeypot_detector import HoneypotDetector
@@ -13,13 +15,32 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 class FastCandidateRankingPipeline:
-    """Fast ranking - career evidence + behavior signals only."""
+    """Fast ranking - career evidence + behavior signals + optional ML model."""
 
-    def __init__(self):
-        logger.info("Initializing fast pipeline (no semantic encoding)...")
+    def __init__(self, use_model: bool = True):
+        logger.info("Initializing fast pipeline...")
         self.fe = FeatureExtractor()
         self.hd = HoneypotDetector(self.fe)
         self.scorer = CandidateScorer(self.fe, self.hd)
+        
+        # Load trained model if available
+        self.use_model = use_model
+        self.model = None
+        self.scaler = None
+        
+        if use_model:
+            try:
+                self.model = joblib.load('ranking_model.pkl')
+                self.scaler = joblib.load('scaler.pkl')
+                logger.info("✓ Loaded trained XGBoost model")
+            except FileNotFoundError:
+                logger.warning("⚠ Model not found (ranking_model.pkl, scaler.pkl)")
+                logger.warning("   Using rule-based scoring instead")
+                self.use_model = False
+            except Exception as e:
+                logger.warning(f"⚠ Error loading model: {e}")
+                logger.warning("   Using rule-based scoring instead")
+                self.use_model = False
 
     def load_candidates(self, file_path: str) -> List[Dict[str, Any]]:
         """Load candidates from file."""
@@ -53,18 +74,66 @@ class FastCandidateRankingPipeline:
         return candidates
 
     def rank_candidates(self, candidates: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
-        """Rank all candidates."""
+        """Rank all candidates using ML model or rule-based scoring."""
         logger.info(f"Ranking {len(candidates)} candidates...")
+        if self.use_model:
+            logger.info("Using ML model (XGBoost)")
+        else:
+            logger.info("Using rule-based scoring")
         
         ranked = []
         
         for i, candidate in enumerate(tqdm(candidates, desc="Scoring candidates")):
             candidate_id = candidate.get("candidate_id", f"candidate_{i}")
             try:
-                final_score, breakdown = self.scorer.score_candidate(
-                    candidate, 
-                    semantic_score=0.5
-                )
+                # Extract component scores
+                title_score = self.scorer._score_title(candidate)
+                career_score = self.scorer._score_career_experience(candidate)
+                company_score = self.scorer._score_product_company(candidate)
+                behavior_score = self.scorer._score_behavioral(candidate)
+                location_score = self.scorer._score_location(candidate)
+                experience_score = self.scorer._score_experience(candidate)
+                
+                # Honeypot check
+                trust_mult, honeypot_details = self.hd.detect_honeypots(candidate)
+                
+               
+                if self.use_model and self.model is not None:
+                    features = np.array([[
+                        title_score,
+                        career_score,
+                        company_score,
+                        behavior_score,
+                        location_score,
+                        experience_score,
+                        trust_mult
+                    ]])
+                    features_scaled = self.scaler.transform(features)
+                    final_score = float(self.model.predict(features_scaled)[0])
+                    final_score = max(0.0, min(1.0, final_score))  # Clip to 0-1
+                else:
+                    # Fall back to rule-based
+                    final_score = (
+                        title_score * 0.20 +
+                        career_score * 0.25 +
+                        company_score * 0.10 +
+                        behavior_score * 0.20 +
+                        location_score * 0.05 +
+                        experience_score * 0.05
+                    ) * trust_mult
+                
+                breakdown = {
+                    "title_score": title_score,
+                    "career_score": career_score,
+                    "product_score": company_score,
+                    "behavioral_score": behavior_score,
+                    "location_score": location_score,
+                    "experience_score": experience_score,
+                    "trust_multiplier": trust_mult,
+                    "final_score": final_score,
+                    "honeypot_details": honeypot_details,
+                }
+                
                 ranked.append({
                     "candidate_id": candidate_id,
                     "final_score": final_score,
@@ -89,7 +158,8 @@ class FastCandidateRankingPipeline:
                 })
         
         ranked.sort(key=lambda x: x["final_score"], reverse=True)
-        logger.info(f"Top score: {ranked[0]['final_score']:.3f}")
+        if ranked:
+            logger.info(f"Top score: {ranked[0]['final_score']:.3f}")
         return ranked
 
     def generate_submission(self, ranked: List[Dict[str, Any]], output_path: str = "submission.csv", top_k: int = 100):
@@ -141,7 +211,7 @@ class FastCandidateRankingPipeline:
         """Run complete pipeline."""
         start = time.time()
         logger.info("=" * 80)
-        logger.info("REDROB CANDIDATE RANKING (FAST MODE)")
+        logger.info("REDROB CANDIDATE RANKING PIPELINE")
         logger.info("=" * 80)
         
         try:
@@ -156,6 +226,7 @@ class FastCandidateRankingPipeline:
             logger.info(f"✓ Submission size: {len(submission)}")
             logger.info(f"✓ Top score: {submission['score'].iloc[0]:.4f}")
             logger.info(f"✓ Avg score: {submission['score'].mean():.4f}")
+            logger.info(f"✓ Using model: {self.use_model}")
             logger.info("=" * 80)
             return submission
         except Exception as e:
@@ -165,12 +236,14 @@ class FastCandidateRankingPipeline:
 def main():
     import argparse
     
-    parser = argparse.ArgumentParser(description="Fast rank candidates")
+    parser = argparse.ArgumentParser(description="Rank candidates with ML model or rule-based scoring")
     parser.add_argument("--candidates", type=str, default="candidates.jsonl", help="Candidate file")
     parser.add_argument("--output", type=str, default="submission.csv", help="Output file")
+    parser.add_argument("--no-model", action="store_true", help="Use rule-based scoring only (skip ML model)")
     args = parser.parse_args()
     
-    pipeline = FastCandidateRankingPipeline()
+    use_model = not args.no_model
+    pipeline = FastCandidateRankingPipeline(use_model=use_model)
     submission = pipeline.run(args.candidates, args.output)
     
     print("\n" + "=" * 80)
