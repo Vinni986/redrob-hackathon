@@ -3,16 +3,16 @@ team_name: "Pseudoclan"
 team_id: "pseudoclan"
 
 primary_contact:
-  name: 
-  email: 
-  phone: 
+  name: "Vivek kushwaha"
+  email: "vivek@pseudoclan.com"
+  phone: "8920599383"
 
 team_members:
   - name: "Vinay Kushwaha"
     email: "vinaymaurya51@gmail.com" 
 
     Name: "Piyush Negi"
-    Email:""
+    Email:"pnegi3750@gmail.com"
 
 github_url: "https://github.com/Vinni986/redrob-hackathon"  
 docker_url: "https://hub.docker.com/r/vinaykush98/redrob-ranking"
