@@ -33,16 +33,10 @@ methodology: |
   Why: Career evidence beats keywords. Fast CPU-only (65 sec).
   No GPU, no network calls, specific reasoning per candidate.
 
-submission_details:
-  total_candidates_evaluated: 100000
-  candidates_ranked: 100
-  top_score: 0.8900
-  average_score: 0.8424
-  reasoning_quality: "Specific facts from profiles with JD connection"
 
 reproducibility:
-  command: "python rank_fast.py --candidates candidates.jsonl --output team_pseudoclan.csv"
-  expected_time: "~65 seconds"
+  command: "python rank.py --candidates candidates.jsonl --output team_pseudoclan.csv"
+  expected_time: "under 5 minutes"
   expected_memory: "2-3 GB"
   language: "Python 3.12"
   dependencies: "See requirements.txt"
