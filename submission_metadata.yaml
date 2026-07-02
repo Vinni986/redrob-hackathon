@@ -15,7 +15,7 @@ team_members:
     Email:""
 
 github_url: "https://github.com/Vinni986/redrob-hackathon"  
-
+docker_url: "https://hub.docker.com/r/vinaykush98/redrob-ranking"
 
 compute_environment: "Linux/WSL, 16GB RAM, Python 3.12"
 
